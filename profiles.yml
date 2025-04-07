@@ -1,0 +1,14 @@
+adventureworks:
+  target: dev
+  outputs:
+    dev:
+      type: snowflake
+      account: HCB48722-INDICIUMACADEMY
+      host: HCB48722-INDICIUMACADEMY.snowflake.com
+      user: OCTAVIO_LINDOLPHO
+      password: V42Fa:bMYdCv5%zJ=pRWr;
+      role: FEA_STUDENT
+      database: FEA24_11
+      warehouse: ACADEMY_WAREHOUSE
+      schema: DBT_OCTAVIO
+      threads: 4
