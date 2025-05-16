@@ -1,0 +1,27 @@
+version: 2
+
+models:
+  - name: dim_customers
+    columns:
+      - name: sk_customer
+        description: "Customer surrogate key"
+        tests:
+          - unique
+          - not_null
+
+      - name: customerid
+        description: "Customer Key"
+        tests:
+          - not_null
+          - unique
+             
+      - name: person_name
+        description: "Customer Name"
+
+      - name: person_type
+        description: "Person Type"
+        
+      - name: store_name
+        description: "Store Name"
+
+        

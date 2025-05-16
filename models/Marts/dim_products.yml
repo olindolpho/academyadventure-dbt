@@ -1,0 +1,38 @@
+version: 2
+
+models:
+  - name: dim_product
+    description: "Product dimension"
+    columns:
+      - name: sk_product
+        description: "Product Surrogatekey"
+        tests:
+          - unique
+          - not_null
+      
+      - name: productid
+        description: "Product primary key"
+        tests:
+          - unique
+          - not_null
+
+      - name: product_name
+        description: "Product Name"
+        tests:
+          - not_null
+
+      - name: category_name
+        description: "Product Category"
+        tests:
+          - not_null
+
+      - name: subcategory_name
+        description: "Subcategory name"
+        tests:
+          - not_null
+
+      - name: price
+        description: "Product Price"
+        tests:
+          - not_null
+          

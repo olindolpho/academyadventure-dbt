@@ -5,6 +5,7 @@ with
             , cast(productsubcategoryid as int) as productsubcategoryid
             , name as product_name
             , color as productcolor
+            , listprice 
           from {{ source('raw_adventure_works','product') }}
      )
 

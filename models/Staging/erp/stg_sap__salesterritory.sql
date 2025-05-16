@@ -4,7 +4,7 @@ with
             cast(territoryid as int) as territoryid
             , name as region
             , countryregioncode as country_code
-            , `group` as continent
+            , 'group' as continent
             , cast(salesytd as numeric) as regionsalesyear
             , cast(saleslastyear as numeric) as regionsaleslastyear
         from {{ source('raw_adventure_works', 'salesterritory') }}

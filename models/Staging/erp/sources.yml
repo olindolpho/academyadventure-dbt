@@ -84,14 +84,8 @@ sources:
             description: "Name of the product"
           - name: color
             description: "Product color"
-          - name: standardcost
-            description: "Standard cost of the product"
           - name: listprice
             description: "Product price"
-          - name: productline
-            description: "The line of the product, as in road, mountain, touring or standard"
-          - name: style
-            description: "The description of the product, as in womens, mens or universal"
 
       - name: productcategory
         description: "Product categorization"
