@@ -26,6 +26,7 @@ with
             customer.customerid
             , customer.personid
             , person.person_name
+            , person.businessentityid
             , customer.storeid
             , store.store_name
         from customer
@@ -39,6 +40,7 @@ with
             , customerid
             , person_name
             , store_name
+            , businessentityid
         from joined
     )
 

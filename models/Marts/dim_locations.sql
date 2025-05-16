@@ -27,6 +27,7 @@ with
             , address.city as city_name
             , stateprovince.state_name
             , countryregion.country_name
+            , address.addressid
         from salesorderheader
         left join address on salesorderheader.shiptoaddressid = address.addressid
         left join stateprovince on address.stateprovinceid = stateprovince.stateprovinceid
